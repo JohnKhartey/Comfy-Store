@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>About | Comfy</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar page">
+        <div class="nav-center">
+            <!-- links -->
+            <div>
+                <button class="toggle-nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li>
+                        <a href="success.html" class="nav-link">Home </a>
+                    </li>
+                    <li>
+                        <a href="products.html" class="nav-link">Products </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link active1">about </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- logo -->
+            <img src="./images/logo-black.svg" class="nav-logo" alt="logo">
+            <!-- cart -->
+            <div class="toggle-container">
+                <button class="toggle-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <span class="cart-item-count">1</span>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="page-hero">
+        <div class="section-center">
+            <h3 class="page-hero-title">Home / About</h3>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section class="section section-center about-page">
+        <div class="title">
+            <h2><span>/</span>our history</h2>
+            <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, cumque deserunt sed qui fuga amet, harum corporis sequi itaque dolorem minus fugiat nesciunt ipsa blanditiis corrupti dolore sunt, assumenda alias aliquid laborum? Adipisci recusandae nemo voluptates, beatae alias neque tempore labore, odio dolores consequatur velit explicabo animi possimus aperiam sint!</p>
+        </div>
+    </section>
+
+    <!-- Sidebar  -->
+    <div class="sidebar-overlay">
+        <aside class="sidebar">
+            <!-- close button -->
+            <button class="sidebar-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <!-- links -->
+            <ul class="sidebar-links">
+                <li>
+                    <a href="success.html" class="sidebar-link">
+                        <i class="fas fa-home fa-fw"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">
+                        <i class="fas fa-couch fa-fw"></i>
+                        Products
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">
+                        <i class="fas fa-book"></i>
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div>
+
+    <!-- cart -->
+    <div class="cart-overlay">
+        <aside class="cart">
+            <button class="cart-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <header>
+                <h3 class="text-slanted">My Cart</h3>
+            </header>
+            <!-- cart items -->
+            <div class="cart-items">
+                <!-- single items -->
+                <article class="cart-item" data-id="">
+                    <img src="./images/main-bcg.jpeg" alt="name" class="cart-item-img">
+                    <!-- item info -->
+                    <div>
+                        <h4 class="cart-item-name">high-back bench</h4>
+                        <p class="cart-item-price">GHS 22.99</p>
+                        <button class="cart-item-remove-btn">remove</button>
+                    </div>
+                    <!-- amount toggle -->
+                    <div>
+                        <button class="cart-item-increase-btn">
+                            <i class="fas fa-chevron-up"></i>
+                        </button>
+                        <p class="cart-item-amount">1</p>
+                        <button class="cart-item-decrease-btn">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </article>
+                <!-- end of single item -->
+            </div>
+            <!-- footer -->
+            <footer>
+                <h3 class="cart-total text-slanted">total : GHS 22.299</h3>
+                <button class="cart-checkout btn">checkout</button>
+            </footer>
+        </aside>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="footer-main">
+        <div class="footer-container">
+            <h3 style="text-align: center;"> Comfy Store</h3>
+
+            <ul class="socials">
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-google-plus"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-buttom">
+            <p>copyright &copy;2021 designed by <span>John Adjetey Khartey (Roll-number: 300662014004)</span></p>
+        </div>
+    </footer>
+
+
+    <script type="module" src="./success.js">
+
+    </script>
+</body>
+
+</html>

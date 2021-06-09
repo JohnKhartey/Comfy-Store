@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+    <!-- styles css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Home | Comfy</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-center">
+            <!-- links -->
+            <div>
+                <button class="toggle-nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#" class="nav-link active">Home </a>
+                    </li>
+                    <li>
+                        <a href="products.html" class="nav-link">Products </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-link">about </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">login</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- logo -->
+            <img src="./images/logo-white.svg" class="nav-logo" alt="logo">
+            <!-- cart -->
+            <div class="toggle-container">
+              <button class="toggle-cart">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <span class="cart-item-count">1</span>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero-1">
+        <div class="hero-container"  id="slider">
+            <div class="success-container">
+                <h1 class="success" id="left-to-right"> welcome to <br> <span class="text-slanted" id="left-to-right" >Comfy store</span></h1>
+                <a href="products.html" class="hero-btn">
+                    shop now
+                </a>
+            </div>
+        </div>
+
+        <!-- login/Registration -->
+        <div class="login-container" id="hide-login">
+            <div class="registration">
+                <form action="success.html" class="form">
+                    <div class="action">
+                        <span class="load show" id="login-action" >Login</span>
+                        <span class="load"  id="reg-action">Register</span>
+                    </div>
+                    <div class="login show-page">
+                        <input type="text" placeholder="Username" />
+                        <input type="password" placeholder="Password" />
+                        <button class="btn-text">Login</button>
+                        <a href="#" onclick="openRegPage()" class="alt-reg">Register</a>
+                    </div>
+                    <div class="reg">
+                        <input type="text" placeholder="Username" />
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <button class="btn-text">Register</button>
+                        <a href="#" onclick="openLoginPage()" class="alt-login">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Sidebar  -->
+    <div class="sidebar-overlay">
+        <aside class="sidebar">
+            <!-- close button -->
+            <button class="sidebar-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <!-- links -->
+            <ul class="sidebar-links">
+                <li>
+                    <a href="#" class="sidebar-link">
+                        <i class="fas fa-home fa-fw"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="products.html" class="sidebar-link">
+                        <i class="fas fa-couch fa-fw"></i>
+                        Products
+                    </a>
+    
+                </li>
+                <li>
+                    <a href="about.html" class="sidebar-link">
+                        <i class="fas fa-book"></i>
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="sidebar-link">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Login
+                    </a>
+                </li>
+            </ul>
+        </aside>
+    </div> 
+
+    <!-- cart -->
+    <div class="cart-overlay">
+        <aside class="cart">
+            <button class="cart-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <header>
+                <h3 class="text-slanted">My Cart</h3>
+            </header>
+            <!-- cart items -->
+            <div class="cart-items">
+                <!-- single items -->
+                <article class="cart-item" data-id="">
+                    <img src="./images/main-bcg.jpeg" alt="name" class="cart-item-img">
+                    <!-- item info -->
+                    <div>
+                        <h4 class="cart-item-name">high-back bench</h4>
+                        <p class="cart-item-price">GHS 12.99</p>
+                        <button class="cart-item-remove-btn">remove</button>
+                    </div>
+                    <!-- amount toggle -->
+                    <div>
+                        <button class="cart-item-increase-btn">
+                            <i class="fas fa-chevron-up"></i>
+                        </button>
+                        <p class="cart-item-amount">1</p>
+                        <button class="cart-item-decrease-btn">
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </article>
+                <!-- end of single item -->
+            </div>
+            <!-- footer -->
+            <footer>
+                <h3 class="cart-total text-slanted">total : GHS 12.99</h3>
+                <button class="cart-checkout btn">checkout</button>
+            </footer>
+        </aside>
+    </div>
+
+    <!-- Featured products  -->
+    <section class="section featured">
+        <div class="title">
+            <h2><span>/</span>featured products</h2>
+        </div>
+        <div class="featured-center section-center">
+            <!-- single product -->
+            
+            <!-- <footer>
+                <p class="product-name">
+                    name
+                </p>
+                <h4 class="product-price">$19.99</h4>
+            </footer> -->
+        </div>
+        <a href="products.html" class="btn">
+            all products
+        </a>
+    </section>
+
+    <!-- Google Map API -->
+    <div class="section-center" style="width: 90vw; justify-content: center; align-items: center;">
+        <iframe width="50%" height="350" frameborder="10" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Accra%20Kanda+(Comfy)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" class="section-center" aria-placeholder="Locate us at: " style="border-radius: 10px;">
+            <strong>Locate us at 2nd Kade Close Kanda:<br> <em>Call us at:</em> 0554804536</strong> 
+        </iframe>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer-main">
+        <div class="footer-container">
+            <h3 style="text-align: center;"> Comfy Store</h3>
+            
+            <ul class="socials">
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>  
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>  
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>  
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-google-plus"></i></a>  
+                </li>
+            </ul>
+        </div>
+        <div class="footer-buttom">
+            <p>copyright &copy;2021 designed by <span>John Adjetey Khartey (Roll-number: 300662014004)</span></p>
+        </div>
+    </footer>
+
+    
+    <script type="module" src="./success.js">
+
+    </script>
+</body>
+
+</html>
